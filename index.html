@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base target="_top">
+    <title>Criação de Processo</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      #formulario {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        width: 400px;
+        text-align: center;
+      }
+
+      h2 {
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+        box-sizing: border-box;
+      }
+
+      input:focus, textarea:focus {
+        border-color: #0066ff;
+      }
+
+      button {
+        background-color: #0066ff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #0044cc;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="formulario">
+      <h2>Crie seu Processo</h2>
+      <form method="POST" enctype="multipart/form-data">
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" required>
+        <button type="submit">Enviar</button>
+        <p id="mensagem"></p>
+      </form>
+    </section>
+  </body>
+  <script src="script.js">
+    
+  </script>
+</html>
